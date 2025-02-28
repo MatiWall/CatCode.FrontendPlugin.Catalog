@@ -540,7 +540,14 @@
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-6.4.6.tgz#42820be160159df81976f467ce496f5310e08eb1"
   integrity sha512-rho5Q4IscbrVmK9rCrLTJmjLjfH6m/NcqKr/mchvck0EIXlyYUB9+Z0oVmkt/+Mben43LMRYBH8q/Uzxj/c4Vw==
 
-"@mui/material@^6.4.6":
+"@mui/icons-material@^6.4.0":
+  version "6.4.6"
+  resolved "http://verdaccio.mw.local/@mui/icons-material/-/icons-material-6.4.6.tgz#a26eaeae2f7f1359b48dac3fe8a8eec61640c325"
+  integrity sha512-rGJBvIQQbQAlyKYljHQ8wAQS/K2/uYwvemcpygnAmCizmCI4zSF9HQPuiG8Ql4YLZ6V/uKjA3WHIYmF/8sV+pQ==
+  dependencies:
+    "@babel/runtime" "^7.26.0"
+
+"@mui/material@^6.4.0", "@mui/material@^6.4.6":
   version "6.4.6"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-6.4.6.tgz#6114a02977735d70170243efc487aed0ca974197"
   integrity sha512-6UyAju+DBOdMogfYmLiT3Nu7RgliorimNBny1pN/acOjc+THNFVE7hlxLyn3RDONoZJNDi/8vO4AQQr6dLAXqA==
@@ -632,6 +639,71 @@
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
+
+"@plugger/frontend-blueprints@^0.1.7":
+  version "0.1.7"
+  resolved "http://verdaccio.mw.local/@plugger/frontend-blueprints/-/frontend-blueprints-0.1.7.tgz#93bd991f2151f822a43071e12545b11ddd2bc5df"
+  integrity sha512-PnpbsKITfaJvKqo1n6OSRTu2RqL6u8YZXQZOo5gO6f85W3nD3txVDjgEyxjjZ9P1CeQrVS14c8V6GRkt/YOhkw==
+  dependencies:
+    "@emotion/react" "^11.14.0"
+    "@emotion/styled" "^11.14.0"
+    "@mui/icons-material" "^6.4.0"
+    "@mui/material" "^6.4.0"
+    "@plugger/frontend-components" "^0.0.2"
+    "@plugger/frontend-extension" "^1.0.2"
+    "@plugger/frontend-routing" "^0.3.3"
+    "@types/react" "^19.0.7"
+    react "^19.0.0"
+    react-dom "^19.0.0"
+    react-router-dom "^7.1.3"
+    vitest "^3.0.5"
+    zod "3.24.2"
+
+"@plugger/frontend-components@^0.0.2":
+  version "0.0.2"
+  resolved "http://verdaccio.mw.local/@plugger/frontend-components/-/frontend-components-0.0.2.tgz#07437a554ffcc4c5a0ffc503e1d5bda525a3647f"
+  integrity sha512-Fjr/Mn0konzuEfNoUX6IEGY21F7SMwJPSQmbbFqqWH0LA6pG7P8K1a+9AYeMH7wVDPNJvboKnG0454lMmAureA==
+  dependencies:
+    "@emotion/react" "^11.14.0"
+    "@emotion/styled" "^11.14.0"
+    "@mui/icons-material" "^6.4.0"
+    "@mui/material" "^6.4.0"
+    react "^19.0.0"
+    react-dom "^19.0.0"
+    react-error-boundary "^5.0.0"
+    react-router-dom "^7.1.3"
+    typescript "^5.7.3"
+    vitest "^3.0.1"
+
+"@plugger/frontend-extension@^1.0.2":
+  version "1.0.2"
+  resolved "http://verdaccio.mw.local/@plugger/frontend-extension/-/frontend-extension-1.0.2.tgz#723434bcbb4fb145dd428e3b882f114679fdabf0"
+  integrity sha512-xq6sQZaT30RQ5yKs9TS4UrtS+XOQvn06/uE8V7dUvhVO3dPdsP8xBiEBFA7tGLnsBWiXYN1qJhy/Dlbd8ttRFA==
+  dependencies:
+    "@plugger/utils" "^0.0.2"
+    lodash "^4.17.21"
+    react "^19.0.0"
+    uuid "^11.0.3"
+    zod "3.24.2"
+
+"@plugger/frontend-routing@^0.3.3":
+  version "0.3.3"
+  resolved "http://verdaccio.mw.local/@plugger/frontend-routing/-/frontend-routing-0.3.3.tgz#ada8c3d7203694e6d323c9f32394e8d26195fd48"
+  integrity sha512-otiy0zYSnFUsTE5t0KWIBocb8YxSBbpsjFGY6B4E5elLfD8M1TJm28zEEKUqLqvdYtZNVcTvUFs/GP9kdq1g3A==
+  dependencies:
+    react "19"
+    react-dom "19"
+    react-router-dom "^7.2.0"
+    typescript "^5.6.3"
+    uuid "^10.0.0"
+    yarn "^1.22.22"
+
+"@plugger/utils@^0.0.2":
+  version "0.0.2"
+  resolved "http://verdaccio.mw.local/@plugger/utils/-/utils-0.0.2.tgz#e284b1f9c929debef2a979cf4cd4fcfbcc46c931"
+  integrity sha512-ah+TdnzSAPmvQu2QaRYbd8wSQw/GlGHW1JIQvoehAJvVTr4x7pB0QpShIdv4mlwy+QjvVOhmsYqBjeMju9TFbA==
+  dependencies:
+    typescript "^5.7.2"
 
 "@polka/url@^1.0.0-next.24":
   version "1.0.0-next.28"
@@ -1092,7 +1164,7 @@
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.12.tgz#b5d76568485b02a307238270bfe96cb51ee2a044"
   integrity sha512-8TV6R3h2j7a91c+1DXdJi3Syo69zzIZbz7Lg5tORM5LEJG7X/E6a1V3drRyBRZq7/utz7A+c4OgYLiLcYGHG6w==
 
-"@types/react@^19.0.10":
+"@types/react@^19.0.10", "@types/react@^19.0.7":
   version "19.0.10"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-19.0.10.tgz#d0c66dafd862474190fe95ce11a68de69ed2b0eb"
   integrity sha512-JuRQ9KXLEjaUNjTWpzuR231Z2WpIwczOkBEIvbHNCzQefFIT0L8IqE6NV6ULLyC1SI/i234JnDoMkfg+RjQj2g==
@@ -2443,12 +2515,19 @@ react-docgen@^7.0.0:
     resolve "^1.22.1"
     strip-indent "^4.0.0"
 
-"react-dom@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0":
+react-dom@19, "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", react-dom@^19.0.0:
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.0.tgz#43446f1f01c65a4cd7f7588083e686a6726cfb57"
   integrity sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==
   dependencies:
     scheduler "^0.25.0"
+
+react-error-boundary@^5.0.0:
+  version "5.0.0"
+  resolved "http://verdaccio.mw.local/react-error-boundary/-/react-error-boundary-5.0.0.tgz#6b6c7e075c922afb0283147e5b084efa44e68570"
+  integrity sha512-tnjAxG+IkpLephNcePNA7v6F/QpWLH8He65+DmedchDwg162JZqx4NmbXj0mlAYVVEd81OW7aFhmbsScYfiAFQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
@@ -2465,7 +2544,7 @@ react-is@^19.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.0.0.tgz#d6669fd389ff022a9684f708cf6fa4962d1fea7a"
   integrity sha512-H91OHcwjZsbq3ClIDHMzBShc1rotbfACdWENsmEf0IFvZ3FgGPtdHMcsv45bQ1hAbgdfiA8SnxTKfDS+x/8m2g==
 
-react-router-dom@^7.2.0:
+react-router-dom@^7.1.3, react-router-dom@^7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-7.2.0.tgz#b8a7eae7827cd5207cf91e89807d01217737797d"
   integrity sha512-cU7lTxETGtQRQbafJubvZKHEn5izNABxZhBY0Jlzdv0gqQhCPQt2J8aN5ZPjS6mQOXn5NnirWNh+FpE8TTYN0Q==
@@ -2492,7 +2571,7 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-"react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", react@^19.0.0:
+react@19, "react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", react@^19.0.0:
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/react/-/react-19.0.0.tgz#6e1969251b9f108870aa4bff37a0ce9ddfaaabdd"
   integrity sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==
@@ -2874,7 +2953,7 @@ type-fest@^4.26.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.35.0.tgz#007ed74d65c2ca0fb3b564b3dc8170d5c872d665"
   integrity sha512-2/AwEFQDFEy30iOLjrvHDIH7e4HEWH+f1Yl1bI5XMqzuoCUqwYCdxachgsgv0og/JdVZUhbfjcJAoHj5L1753A==
 
-typescript@^5.8.2:
+typescript@^5.6.3, typescript@^5.7.2, typescript@^5.7.3, typescript@^5.8.2:
   version "5.8.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.2.tgz#8170b3702f74b79db2e5a96207c15e65807999e4"
   integrity sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==
@@ -2924,6 +3003,16 @@ util@^0.12.5:
     is-typed-array "^1.1.3"
     which-typed-array "^1.1.2"
 
+uuid@^10.0.0:
+  version "10.0.0"
+  resolved "http://verdaccio.mw.local/uuid/-/uuid-10.0.0.tgz#5a95aa454e6e002725c79055fd42aaba30ca6294"
+  integrity sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==
+
+uuid@^11.0.3:
+  version "11.1.0"
+  resolved "http://verdaccio.mw.local/uuid/-/uuid-11.1.0.tgz#9549028be1753bb934fc96e2bca09bb4105ae912"
+  integrity sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==
+
 uuid@^9.0.0:
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.1.tgz#e188d4c8853cc722220392c424cd637f32293f30"
@@ -2951,7 +3040,7 @@ vite-node@3.0.7:
   optionalDependencies:
     fsevents "~2.3.3"
 
-vitest@^3.0.7:
+vitest@^3.0.1, vitest@^3.0.5, vitest@^3.0.7:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/vitest/-/vitest-3.0.7.tgz#ed8f42e1b0e09e2179eaefd966cb58a8b75f0f6a"
   integrity sha512-IP7gPK3LS3Fvn44x30X1dM9vtawm0aesAa2yBIZ9vQf+qB69NXC5776+Qmcr7ohUXIQuLhk7xQR0aSUIDPqavg==
@@ -3083,6 +3172,11 @@ yargs@^17.7.2:
     y18n "^5.0.5"
     yargs-parser "^21.1.1"
 
+yarn@^1.22.22:
+  version "1.22.22"
+  resolved "http://verdaccio.mw.local/yarn/-/yarn-1.22.22.tgz#ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==
+
 yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
@@ -3092,3 +3186,8 @@ yoctocolors-cjs@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/yoctocolors-cjs/-/yoctocolors-cjs-2.1.2.tgz#f4b905a840a37506813a7acaa28febe97767a242"
   integrity sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==
+
+zod@3.24.2:
+  version "3.24.2"
+  resolved "http://verdaccio.mw.local/zod/-/zod-3.24.2.tgz#8efa74126287c675e92f46871cfc8d15c34372b3"
+  integrity sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==

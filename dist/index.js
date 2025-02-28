@@ -2,7 +2,6 @@
 //import { useApplication, ApplicationProvider } from './component/context';
 //import EntityPage from './entity/entities-page';
 //import FilterBar from './filters/bar'
-
 /*export {
     FilterBar,
     ApplicationPage,
@@ -11,9 +10,6 @@
     ApplicationProvider
 };
 */
-
-export * from './components'
-
-export {
-    catalogPlugin
-} from './Plugin'
+export * from './components';
+export { catalogPlugin } from './Plugin';
+//# sourceMappingURL=index.js.map
