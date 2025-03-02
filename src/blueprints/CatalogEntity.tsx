@@ -1,12 +1,12 @@
 import React from 'react';
 import { RoutingSwitch } from '../components';
 import { createExtensionBluePrint } from '@plugger/frontend-extension';
-import { PageBlueprint, NavbarItemBlueprint } from '@plugger/frontend-blueprints';
+import { PageBlueprint, RouteBindBluePrint } from '@plugger/frontend-blueprints';
 import {createRouteRef, useRouteRefParams} from '@plugger/frontend-routing'
 import { catalogPageRouteRef } from './Catalog';
 
 
-const catalogEntityPageRouteRef = catalogPageRouteRef.createSubRouteRef({
+const catalogEntityPageRouteRef = createRouteRef({
     params: ['kind', 'namespace', 'name']
 });
 
@@ -24,12 +24,22 @@ const CatalogEntity = () => {
 
 const catalogEntityPage = PageBlueprint.make({
     namespace: 'catalog',
-    name: 'overview',
-    kind: 'default',
+    name: 'entity',
+    kind: 'home',
     params: {
         page: CatalogEntity,
         routeRef: catalogEntityPageRouteRef
 
+    }
+})
+
+const catalogEntityPageBind = RouteBindBluePrint.make({
+    namespace: 'catalog',
+    name: 'entity',
+    kind: 'route-bind',
+    params: {
+        path: '/catalog',
+        routeRef: catalogEntityPageRouteRef
     }
 })
 
@@ -38,5 +48,6 @@ const catalogEntityPage = PageBlueprint.make({
 
 export {
     catalogEntityPage,
-    catalogEntityPageRouteRef
+    catalogEntityPageRouteRef,
+    catalogEntityPageBind
 };

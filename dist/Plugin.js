@@ -1,12 +1,13 @@
 import { createPlugin } from "@plugger/frontend-extension";
-import { catalogEntityPage, catalogEntityPageRouteRef, catalogPage, catalogPageNavbarItem, catalogPageRouteBind, catalogPageRouteRef } from "./blueprints";
+import { catalogEntityPage, catalogEntityPageRouteRef, catalogEntityPageBind, catalogPage, catalogPageNavbarItem, catalogPageRouteBind, catalogPageRouteRef } from "./blueprints";
 const catalogPlugin = createPlugin({
     id: 'catalog',
     extensions: [
         catalogPage,
         catalogPageNavbarItem,
         catalogPageRouteBind,
-        catalogEntityPage
+        catalogEntityPage,
+        catalogEntityPageBind
     ],
     routes: {
         catalog: catalogPageRouteRef,

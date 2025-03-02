@@ -40,9 +40,9 @@ const catalogPageNavbarItem = NavbarItemBlueprint.make({
 })
 
 const catalogPageRouteBind = RouteBindBluePrint.make({
-    namespace: 'navbar',
-    name: 'item2',
-    kind: 'bind',
+    namespace: 'catalog',
+    name: 'overview',
+    kind: 'route-bind',
     params: {
         path: '/catalog',
         routeRef: catalogPageRouteRef

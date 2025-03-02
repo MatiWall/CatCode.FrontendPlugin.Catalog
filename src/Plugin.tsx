@@ -2,6 +2,7 @@ import { createPlugin } from "@plugger/frontend-extension";
 import { 
     catalogEntityPage, 
     catalogEntityPageRouteRef, 
+    catalogEntityPageBind,
     catalogPage , 
     catalogPageNavbarItem, 
     catalogPageRouteBind, 
@@ -14,7 +15,8 @@ const catalogPlugin = createPlugin({
         catalogPage,
         catalogPageNavbarItem,
         catalogPageRouteBind, 
-        catalogEntityPage
+        catalogEntityPage,
+        catalogEntityPageBind
     ],
     routes: {
         catalog: catalogPageRouteRef,
