@@ -1,1 +1,1 @@
-export { default as RoutingSwitch } from "./Switch";
+export {default as EntitySwitch} from './EntitySwitch'

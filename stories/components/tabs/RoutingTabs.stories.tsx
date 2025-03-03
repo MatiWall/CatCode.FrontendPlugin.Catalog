@@ -1,11 +1,11 @@
 import React from 'react'
-import { RoutingSwitch } from '../../../src'
+import { RoutingTabs } from '../../../src'
 import { MemoryRouter, Route, Routes, Outlet, useLocation } from 'react-router-dom'
 import { Meta, StoryObj, StoryFn } from '@storybook/react';
 
 export default {
-  title: "Components/RoutingSwitch",
-  component: RoutingSwitch,
+  title: "Components/tabs/RoutingTabs",
+  component: RoutingTabs,
   decorators: [
     (Story) => (
       <MemoryRouter initialEntries={["/home"]}>
@@ -20,16 +20,16 @@ export default {
       </MemoryRouter>
     ),
   ],
-} as Meta<typeof RoutingSwitch>;
+} as Meta<typeof RoutingTabs>;
 
-const Template: StoryFn<typeof RoutingSwitch> = () => (
+const Template: StoryFn<typeof RoutingTabs> = () => (
   <div>
-    <RoutingSwitch>
-      <RoutingSwitch.Item label="Home" value="/home" />
-      <RoutingSwitch.Item label="About" value="/about" />
-      <RoutingSwitch.Item label="Contact" value="/contact" />
-      <RoutingSwitch.Item label="Disabled" value="/disabled" active={false} />
-    </RoutingSwitch>
+    <RoutingTabs>
+      <RoutingTabs.Item label="Home" value="/home" />
+      <RoutingTabs.Item label="About" value="/about" />
+      <RoutingTabs.Item label="Contact" value="/contact" />
+      <RoutingTabs.Item label="Disabled" value="/disabled" active={false} />
+    </RoutingTabs>
     <Outlet />
   </div>
 );

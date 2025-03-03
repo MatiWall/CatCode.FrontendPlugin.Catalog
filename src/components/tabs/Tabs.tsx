@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { AppBar, Tabs, Tab } from '@mui/material';
+import { Tabs, Tab } from '@mui/material';
 import { Link, useLocation, Navigate } from 'react-router-dom';
 
 // Define types for the props of RoutingSwitch.Item
@@ -10,17 +10,13 @@ interface ItemProps {
 }
 
 // Define types for the props of RoutingSwitch
-interface RoutingSwitchProps {
+interface RoutingTabsProps {
   children: ReactNode;
 }
 
-// Define RoutingSwitch as a functional component with Item as a static property
-interface RoutingSwitchComponent extends React.FC<RoutingSwitchProps> {
-  Item: React.FC<ItemProps>;
-}
 
 
-const RoutingSwitch: RoutingSwitchComponent = ({ children }) => {
+const RoutingTabs = ({ children }: RoutingTabsProps) => {
   const location = useLocation();
   return (
     <Tabs value={location.pathname}>
@@ -45,6 +41,6 @@ const Item: React.FC<ItemProps> = ({ label, value, active = true }) => {
 };
 
 // Attach Item to RoutingSwitch
-RoutingSwitch.Item = Item;
+RoutingTabs.Item = Item;
 
-export default RoutingSwitch;
+export default RoutingTabs;
