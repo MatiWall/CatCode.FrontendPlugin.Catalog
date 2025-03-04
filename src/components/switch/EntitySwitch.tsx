@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 type ItemProps = {
     children: React.ReactNode;
     when: boolean;
@@ -15,9 +16,7 @@ type EntitySwitchProps = {
     children: React.ReactNode;
 };
 
-const EntitySwitch: React.FC<EntitySwitchProps> = ({children}) => {
-
-    const entity = useEntity();
+const EntitySwitch: React.FC<EntitySwitchProps> & {Case: typeof Item} = ({children}) => {
 
     const validChildren = React.Children.toArray(children) as React.ReactElement<ItemProps>[];
 

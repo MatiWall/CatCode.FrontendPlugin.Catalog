@@ -12,7 +12,10 @@
 };
 */
 
-export * from './components'
+export * from './components';
+
+export * from './contexts';
+
 
 export {
     catalogPlugin
