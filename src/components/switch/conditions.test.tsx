@@ -4,7 +4,7 @@ import { EntityProvider } from '../../contexts';
 import { Entity } from '../../types';
 import { isKind } from './conditions';
 import {render, screen} from '@testing-library/react';
-import '@testing-library/jest-dom';
+import '@testing-library/jest-dom/vitest';
 
 
 test('Testing isKind', ()=>{

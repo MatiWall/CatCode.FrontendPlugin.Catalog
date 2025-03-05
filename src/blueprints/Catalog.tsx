@@ -1,6 +1,4 @@
 import React from 'react';
-import { RoutingSwitch } from '../components';
-import { createExtensionBluePrint } from '@plugger/frontend-extension';
 import { createRouteRef } from '@plugger/frontend-routing';
 import { PageBlueprint, NavbarItemBlueprint, RouteBindBluePrint } from '@plugger/frontend-blueprints';
 
